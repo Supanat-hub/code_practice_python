@@ -1,0 +1,21 @@
+def grader(eng, math, thai, phy, che):
+    mean = (eng + math + thai + phy + che)/5
+    print("Mean:")
+    print("{:.1f}".format(mean))
+    print("English:")
+    print("{:.1f}%".format(eng))
+    print("Maths:")
+    print("{:.1f}%".format(math))
+    print("Thai:")
+    print("{:.1f}%".format(thai))
+    print("Physics:")
+    print("{:.1f}%".format(phy))
+    print("Chemistry:")
+    print("{:.1f}%".format(che))
+
+eng = int(input("English score = "))
+math = int(input("Maths score = "))
+thai = int(input("Thai score = "))
+phy = int(input("Physics score = "))
+che = int(input("Chemistry score = "))
+grader(eng, math, thai, phy, che)
